@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidade GDriveMCP</title>
+<style>
+  :root { --bg:#fafaf8; --ink:#1d1d1b; --muted:#66655f; --line:#e2e1dc; --accent:#1a73e8; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#171716; --ink:#ebeae5; --muted:#a3a29b; --line:#33332f; --accent:#8ab4f8; } }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 "Segoe UI", system-ui, sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:40px 16px; }
+  h1 { font-size:26px; margin:0 0 4px; }
+  h2 { font-size:18px; margin:26px 0 6px; }
+  p, li { margin:8px 0; }
+  .muted { color:var(--muted); }
+  a { color:var(--accent); }
+  footer { margin-top:32px; padding-top:16px; border-top:1px solid var(--line); font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidade — GDriveMCP</h1>
+  <p class="muted">Vigente desde 16/10/2026</p>
+
+  <h2>O que é</h2>
+  <p>O GDriveMCP é uma ferramenta de uso pessoal, executada apenas no computador do próprio dono, que
+     acessa as contas Google Drive dele por meio da API oficial do Google, com autorização OAuth concedida
+     por ele. Não é oferecida a terceiros e não possui servidores.</p>
+
+  <h2>Dados acessados</h2>
+  <ul>
+    <li>Arquivos e metadados do Google Drive das contas que o próprio dono autorizou
+        (escopos <code>drive.readonly</code> e, quando ele habilita escrita, <code>drive</code>).</li>
+    <li>O endereço de e-mail de cada conta conectada, para identificá-la.</li>
+  </ul>
+
+  <h2>Como os dados são usados</h2>
+  <ul>
+    <li>Apenas para atender pedidos do próprio dono: procurar, ler, baixar e organizar os arquivos dele,
+        e arquivar documentos fiscais da própria empresa.</li>
+    <li>Quando o dono pede ao assistente Claude Code para ler um arquivo, o conteúdo é enviado ao modelo
+        de IA dentro da sessão do próprio dono, como parte do pedido dele.</li>
+    <li>Os dados não são vendidos, compartilhados com terceiros, usados para publicidade nem para treinar
+        modelos de IA de uso geral.</li>
+  </ul>
+
+  <h2>Armazenamento e segurança</h2>
+  <ul>
+    <li>As credenciais de acesso (tokens OAuth) ficam no Gerenciador de Credenciais do Windows do computador
+        do dono. Não são enviadas a nenhum servidor do aplicativo.</li>
+    <li>Arquivos baixados ficam somente no computador do dono.</li>
+  </ul>
+
+  <h2>Uso limitado</h2>
+  <p>O uso e a transferência de informações recebidas das APIs do Google seguem a
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de dados do usuário
+     dos serviços de API do Google</a>, incluindo os requisitos de uso limitado.</p>
+
+  <h2>Como revogar o acesso</h2>
+  <p>A qualquer momento em <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>
+     → GDriveMCP → Remover acesso. As credenciais locais também podem ser apagadas pela própria ferramenta.</p>
+
+  <h2>Contato</h2>
+  <p>Pela página do projeto: <a href="https://github.com/marcolimajf542/gdrivemcp">github.com/marcolimajf542/gdrivemcp</a>.</p>
+
+  <footer><a href="index.html">GDriveMCP</a></footer>
+</main>
+</body>
+</html>
